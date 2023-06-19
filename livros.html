@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <meta property="og:image" content="https://sababysz.online/naruto.jpg">
+  <meta name="description" content="Você poderá encontrar os melhores livros de desenvolvimento pessoal aqui, aproveite.">
+  <title>sababysz.online/livros</title>
+  <link rel="stylesheet" href="livros.css">
+    
+</head>
+ <body>
+   
+ <header>
+       
+<input type="checkbox" id="burger-toggle">
+<label for="burger-toggle" class="burger-menu">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</label>
+
+<nav class="menu">
+
+  <div class="menu-inner">
+
+    <ul class="menu-nav">
+
+      <a href="perfil.html">
+        <img src="perfilogo.png" id="perfilogo">
+      </a>
+
+
+      <li class="menu-nav-item"><a class="menu-nav-link" href="index.html"><span>
+            <div>início</div>
+          </span></a>
+      </li>
+
+      <li class="menu-nav-item"><a class="menu-nav-link" href="filmes.html"><span>
+
+            <div>Filmes</div>
+          </span></a>
+      </li>
+
+      <li class="menu-nav-item"><a class="menu-nav-link" href="livros.html"><span>
+            <div>Livros</div>
+          </span></a>
+      </li>
+
+      <li class="menu-nav-item"><a class="menu-nav-link" href="videos.html"><span>
+            <div>Vídeos</div>
+          </span></a>
+  </div>
+  </li>
+  </ul>
+  </div>
+</nav>
+           
+           
+           
+           
+<div class="titulo-club">
+       
+  <h1>LIVROS</h1>
+       
+      </div>
+      
+      
+<div class="video-container">
+  <!-- Código de incorporação do YouTube com atributos extras -->
+  <iframe src="https://www.youtube.com/embed/sSbxgk5IEMU?enablejsapi=1&controls=0" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<script>
+// Função chamada quando a API do YouTube estiver pronta
+function onYouTubeIframeAPIReady() {
+  // Cria um novo player
+  var player = new YT.Player('player', {
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+
+  // Função chamada quando o player estiver pronto
+  function onPlayerReady(event) {
+    // Bloqueia o botão de reprodução
+    event.target.setPlaybackRate(0); // Pausa o vídeo imediatamente
+
+    // Bloqueia o salto no vídeo (avanço e retrocesso)
+    event.target.unMute(); // Garante que o áudio não esteja mudo
+    event.target.setVolume(0); // Define o volume para 0 para bloquear o áudio
+    event.target.setOption("disablekb", 1); // Bloqueia o uso do teclado para avançar ou retroceder o vídeo
+  }
+}
+</script>
+
+
+<div class="background"></div>
+       
+
+<script src="main.js"></script>
+
+</body>
+</html>

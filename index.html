@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <meta property="og:image" content="https://chrome.google.com/webstore/detail/itachi-live-wallpaper/ihmlfoinmmfmcdogoellfomkcdofflfj?hl=pt-BR">
+  <meta name="description" content="Experimente nossa plataforma, desenvolvida por @sababysz. Trazendo atualizações para seu dia a dia, aproveite.">
+  <title>sababysz</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+ <body>
+
+ 
+  <header>
+    
+<div class="cabecalho"></div> 
+
+ <div class="logo" id="logo">sababysz.</div>
+ <div class="logo2" id="logo2">online</div>
+
+  
+
+  
+ 
+  
+
+
+
+
+<!DOCTYPE menu desktop>
+  
+<nav class="menu-desktop">
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="filmes.html">Filmes</a></li>
+    <li><a href="livros.html">Livros</a></li>
+    <li><a href="videos.html">Vídeos</a></li>
+    <li><a href="perfil.html">Perfil</a></li>
+  </ul>
+</nav>
+
+<!DOCTYPE menu desktop>
+  
+  
+  
+ 
+<input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+
+ <nav class="menu">
+              
+   <div class="menu-inner">
+              
+    <ul class="menu-nav">
+      
+        <a href="perfil.html">
+  <img src="perfilogo.png" id="perfilogo">
+   </a>
+      
+         
+      <li class="menu-nav-item"><a class="menu-nav-link" href="index.html"><span>
+   <div>início</div>
+     </span></a>
+      </li>
+                  
+      <li class="menu-nav-item"><a class="menu-nav-link" href="filmes.html"><span>
+        
+  <div>Filmes</div>
+   </span></a>
+               </li>
+                        
+  <li class="menu-nav-item"><a class="menu-nav-link" href="livros.html"><span>
+  <div>Livros</div>
+   </span></a>
+               </li>
+                        
+  <li class="menu-nav-item"><a class="menu-nav-link" href="videos.html"><span>
+  <div>Vídeos</div>
+         </span></a>
+        </div>      
+          </li>
+             </ul>
+                 </nav>
+       
+       
+       
+       
+         
+  </header>      
+  
+       
+  
+<video src="terra.mp4" loop autoplay muted id="home-fundo"></video>
+
+         
+
+<div class="texto-animado">
+  <p class="linha-animada-2">Bem-Vindo</p>
+  <p class="texto-bemvindo">“Quando não conseguimos mais mudar uma situação, temos o desafio de mudar a nós mesmos.”
+  — Viktor Frankl</p>
+</div>
+
+
+<!DOCTYPE botoes home>
+
+<div class="botoes-home">
+  <a href="#teste-2" class="styled-button" onclick="scrollToDiv(event)">EXPLORAR</a>
+  <a href="" class="styled-button2">OUTRO</a>
+</div>
+
+
+  
+
+<!DOCTYPE botoes home>
+
+
+
+<div class="icon-scroll-home">
+ <img src="icon-scrool.png" width="140" height="110">
+ </div>
+
+
+
+
+
+<!DOCTYPE MUSICA HOME E OUTRO>
+<div class="musica-home">
+ <h1>Sessão de<h2>musicas</h1>
+ <h3>Playlist Semanal</h3>
+ <h4>Atualizado Hoje</h4>
+ <h5>Via: You Tube</h5>
+  
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+<div id="player"></div>
+
+<script>
+  // Função chamada quando a API do YouTube estiver pronta
+  function onYouTubeIframeAPIReady() {
+    // Cria um novo player
+    var player = new YT.Player('player', {
+      playerVars: {
+        'listType': 'playlist',  // Define o tipo de lista
+        'list': 'PLjT5vESAmXiDNtF3P7Z6-WVEF7Y7B5crp'   // ID da playlist a ser reproduzida
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  // Função chamada quando o player estiver pronto
+  function onPlayerReady(event) {
+    event.target.playVideo(); // Inicia a reprodução do vídeo
+  }
+
+  // Função chamada quando o estado do player mudar
+  function onPlayerStateChange(event) {
+    // Se o vídeo terminar de reproduzir, pode ser executada alguma ação
+    if (event.data === YT.PlayerState.ENDED) {
+      // Ação quando o vídeo terminar
+    }
+  }
+</script>
+
+  
+</div>
+
+
+<div class="outro-home">
+  
+ <video src="interestelar.mp4" type="video/mp4"controls="0" autoplay="autoplay"></video>
+  
+</div>
+
+
+
+ 
+ 
+ <!DOCTYPE containers box>
+ 
+ <div class="titulo-box">
+  <h1>Uma experiência simples<h1>e fácil</h1>
+  </div>
+     <a href="#">
+ <div class="box" id="box-1">
+   
+<!DOCTYPE texto box aqui>
+
+<h1>APRESENTAÇÃO</h1>
+
+<p>Bem-vindo(a) ao sababysz.online! Somos uma plataforma dedicada a sugerir novos conhecimentos. Oferecemos ajudar em diversos hobbies. Navegue em nosso site para encontrar gosto específico. Esperamos que aproveite sua visita!</p>
+
+
+ </div>
+    </a>
+
+ 
+ 
+
+<a href="#">
+ <div class="box" id="box-2">
+ 
+<!DOCTYPE texto box aqui>
+
+<h1>INFORMAÇÕES</h1>
+
+<p>Este site ainda está no início de desenvolvimento, então qualquer bug ou erro pode ser normal. Se quiser nos enviar qualquer feedback colocaremos um link para envio aos nossos desenvolveres. desde já agradeço pela compreensão.</p>
+    
+           </div>
+              </a>
+           
+ 
+ 
+  <a href="#">
+  <div class="box" id="box-3">
+ 
+<!DOCTYPE texto box aqui>
+
+<h1>ATENÇÃO</h1>
+
+<p>Como dito, o site está em desenvolvimento, todavia estaremos adicionando novos recursos e conteúdos para lhe oferecer a melhor experiência possível. Através do menu você acessa mais informações.</p>
+  
+           </div>
+              </a>
+              
+              
+ 
+
+<div id="teste-2"></div>
+<div class="titulo-sliders" id="teste-1">
+  <h1>Aproveite cada uma de nossas vitrines disponíveis</h1>
+</div>
+
+
+<div class="carousel-container">
+  <div class="slides-list">
+    <a href="filmes.html" class="slide" id="slide1"></a>
+    <a href="livros.html" class="slide" id="slide2"></a>
+    <a href="videos.html" class="slide" id="slide3"></a>
+    <a href="filmes.html#teste" class="slide" id="slide4"></a>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container-topico">
+  
+</div>
+
+
+
+
+
+
+<!-- Pop-up HTML -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <!-- Botão de fechamento -->
+    <span class="close-button" onclick="closePopup()">X</span>
+
+    <!-- Conteúdo do pop-up -->
+    <h1>AVISO</h1>
+    <p>* O site ainda está em desenvolvimento<p>
+      <br>
+      *Recomendo usar apenas em celulares (sem dpi), pois ainda não está responsivo</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+  // Função para mostrar o pop-up
+  function showPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "flex";
+  }
+
+  // Função para fechar o pop-up
+  function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+
+  // Esperar até que a página seja carregada
+  window.addEventListener("load", function() {
+    setTimeout(showPopup, 2000); // Atraso de 10 segundos antes de exibir o pop-up
+  });
+</script>
+ 
+  
+
+
+
+
+
+
+
+<div class="rodape">
+  <p>Copyhight © 2023 Sabaysz Legacy</p>
+</div>
+
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
